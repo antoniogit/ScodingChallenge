@@ -9,10 +9,15 @@
     <h1>All accounts</h1>
     <br/>
         <g:each in="${accounts}" var="account" status="i">
-            <h3>${i+1}. ${account.name}, email: ${account.emailAddress}</h3>
+         <g:link controller="transactions" action="index" params="[name: account.name]"> <h3>${i+1}. ${account.name}, </h3></g:link>
+           
+            <p>
+                email: ${account.emailAddress}
+            </p>
             <p>
                 balance: ${account.balance}
             </p>
+
             <br/>
         </g:each>
     </body>

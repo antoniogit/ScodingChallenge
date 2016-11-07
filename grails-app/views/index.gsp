@@ -104,7 +104,7 @@
             </ul>
         </div>
         <div id="page-body" role="main">
-            <h1>Welcome to my codig=ng challenge!</h1>
+            <h1>Welcome to my coding challenge!</h1>
             <p>I have decided to leave the controllers and the application stats so you could easily understand the steps I've taken to complete the challenge.</p>
 
             <div id="controller-list" role="navigation">

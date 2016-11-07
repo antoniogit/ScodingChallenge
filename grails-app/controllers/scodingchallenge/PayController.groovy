@@ -27,6 +27,8 @@ class PayController {
 				pay_to.balance = pay_to.balance + amount_sent.toInteger();
 				pay_to.save(flush:true);
 
+				new Transactions(sendTo: pay_to.name, receiveFrom: pay_from.name, amount: amount_sent).save(flush:true)
+
 				render text: "The transaction was succesfull", contentType: 'text'
 			} else {
 
