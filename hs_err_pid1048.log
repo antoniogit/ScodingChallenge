@@ -1,0 +1,128 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 1048576 bytes for object start array expansion
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (objectStartArray.cpp:102), pid=1048, tid=0x0000000000001b98
+#
+# JRE version:  (8.0_111-b14) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.111-b14 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000024d6800):  JavaThread "Unknown thread" [_thread_in_vm, id=7064, stack(0x00000000022e0000,0x00000000023e0000)]
+
+Stack: [0x00000000022e0000,0x00000000023e0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000024d6800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7064, stack(0x00000000022e0000,0x00000000023e0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6fbfc0000 - 0x00007ff6fbff7000 	C:\Program Files\Java\jdk1.8.0_111\bin\java.exe
+0x00007ffb10f50000 - 0x00007ffb110fd000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffb0ff60000 - 0x00007ffb1009e000 	C:\Windows\system32\KERNEL32.DLL
+0x00007ffb0e2d0000 - 0x00007ffb0e3e5000 	C:\Windows\system32\KERNELBASE.dll
+0x00007ffb0cc40000 - 0x00007ffb0ccce000 	C:\Windows\system32\apphelp.dll
+0x00007ffafe250000 - 0x00007ffafe2a3000 	C:\Windows\AppPatch\AppPatch64\AcGenral.DLL
+0x00007ffb108f0000 - 0x00007ffb1099a000 	C:\Windows\system32\msvcrt.dll
+0x00007ffb0e250000 - 0x00007ffb0e27e000 	C:\Windows\system32\SspiCli.dll
+0x00007ffb100a0000 - 0x00007ffb100f4000 	C:\Windows\system32\SHLWAPI.dll
+0x00007ffb10cb0000 - 0x00007ffb10e27000 	C:\Windows\system32\USER32.dll
+0x00007ffb104e0000 - 0x00007ffb10674000 	C:\Windows\system32\ole32.dll
+0x00007ffb0e830000 - 0x00007ffb0fd58000 	C:\Windows\system32\SHELL32.dll
+0x00007ffb0d6c0000 - 0x00007ffb0d6e1000 	C:\Windows\SYSTEM32\USERENV.dll
+0x00007ffb10e30000 - 0x00007ffb10eda000 	C:\Windows\system32\ADVAPI32.dll
+0x00007ffafc840000 - 0x00007ffafc85e000 	C:\Windows\SYSTEM32\MPR.dll
+0x00007ffb107b0000 - 0x00007ffb108f0000 	C:\Windows\system32\RPCRT4.dll
+0x00007ffb10690000 - 0x00007ffb106e9000 	C:\Windows\SYSTEM32\sechost.dll
+0x00007ffb102c0000 - 0x00007ffb104d1000 	C:\Windows\SYSTEM32\combase.dll
+0x00007ffb0e6a0000 - 0x00007ffb0e7ef000 	C:\Windows\system32\GDI32.dll
+0x00007ffb0e070000 - 0x00007ffb0e085000 	C:\Windows\SYSTEM32\profapi.dll
+0x00007ffb0c460000 - 0x00007ffb0c512000 	C:\Windows\SYSTEM32\SHCORE.dll
+0x00007ffb0e7f0000 - 0x00007ffb0e826000 	C:\Windows\system32\IMM32.DLL
+0x00007ffb10100000 - 0x00007ffb10252000 	C:\Windows\system32\MSCTF.dll
+0x00007ffb0bbe0000 - 0x00007ffb0be5b000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.18006_none_623f33d3ecbe86e8\COMCTL32.dll
+0x0000000059310000 - 0x00000000593e2000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\msvcr100.dll
+0x0000000058a70000 - 0x000000005930a000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\server\jvm.dll
+0x00007ffb09c80000 - 0x00007ffb09c89000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffb0b1a0000 - 0x00007ffb0b1c2000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffb091f0000 - 0x00007ffb091fa000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffb10680000 - 0x00007ffb10687000 	C:\Windows\system32\PSAPI.DLL
+0x00007ffb10260000 - 0x00007ffb102ba000 	C:\Windows\system32\WS2_32.dll
+0x00007ffb0b170000 - 0x00007ffb0b19a000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffb0fd60000 - 0x00007ffb0fd69000 	C:\Windows\system32\NSI.dll
+0x00007ffb0e280000 - 0x00007ffb0e2cf000 	C:\Windows\SYSTEM32\cfgmgr32.dll
+0x00007ffb0ceb0000 - 0x00007ffb0ced8000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x0000000059500000 - 0x000000005950f000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\verify.dll
+0x0000000058a40000 - 0x0000000058a69000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\java.dll
+0x00000000589b0000 - 0x00000000589d3000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\instrument.dll
+0x0000000058a20000 - 0x0000000058a36000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Denv=development -Dfull.stacktrace=true -Dgrails.env=development -Dgrails.full.stacktrace=true -Dinfo.app.grailsVersion=3.0.0 -Dinfo.app.name=ScodingChallenge -Dinfo.app.version=0.1 -Dshow.stacktrace=true -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -XX:CICompilerCount=3 -javaagent:C:\Users\AR Nicolae\.gradle\caches\modules-2\files-2.1\org.springframework\springloaded\1.2.3.RELEASE\adb44a1feaae2d717b534fec52210f1838de4aed\springloaded-1.2.3.RELEASE.jar -Xverify:none -Xms768m -Xmx768m -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant 
+java_command: scodingchallenge.Application
+java_class_path (initial): E:\SSCodingChallenge\ScodingChallenge\src\main\resources;E:\SSCodingChallenge\ScodingChallenge\grails-app\views;E:\SSCodingChallenge\ScodingChallenge\grails-app\i18n;E:\SSCodingChallenge\ScodingChallenge\grails-app\conf;E:\SSCodingChallenge\ScodingChallenge\build\classes\main;E:\SSCodingChallenge\ScodingChallenge\build\resources\main;C:\Users\AR Nicolae\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-logging\1.2.3.RELEASE\43093c137ea9c6d26ca6341e17295c0a6c506dfb\spring-boot-starter-logging-1.2.3.RELEASE.jar;C:\Users\AR Nicolae\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-actuator\1.2.3.RELEASE\e4cf4c22717f7e235909088d44eb2cea5a96de37\spring-boot-starter-actuator-1.2.3.RELEASE.jar;C:\Users\AR Nicolae\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\1.2.3.RELEASE\11175f217ac34bdacd6282cd44310f211121e270\spring-boot-autoconfigure-1.2.3.RELEASE.jar;C:\Users\AR Nicolae\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-tomcat\1.2.3.RELEASE\32de443f4e43ceee62c3e1e855fee076fec546b3\spring-boot-starter-tomcat-1.2.3.RELEASE.jar;C:\Users\AR Nicolae\.gradle\caches\modules-2\files-2.1\org.grails\grails-web-boot\3.0.0\13b2a65f3523df28094ff0e24ba22b5a3da9dd5a\grails-web-boot-3.0.0.jar;C:\Users\AR Nicolae\.gradle\caches\modules-2\files-2.1\org.grails.plugins\hibernate\4.3.8.0\315d9205dc174b125e3dbee7b651ca18ae30cc16\hibernate-4.3.8.0.jar;C:\Users\AR Nicolae\.gradle\caches\modules-2\files-2.1\org.grails.plugins\cache\3.0.1\7a360b62877f81907d9aa6f76b8019912d3a2031\cache-3.0.1.jar;C:\Users\AR Nicolae\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-ehcache\4.3.8.Final\f040321945cbc2040d49f6cd9e273b4a76b59258\hibernate-ehcache-4.3.8.Final.jar;C:\Users\AR Nicolae\.gradle\caches\modules-2\files-2.1\org.grails.plugins\asset-pipeline\3.0.0\d8cd3b37325b0559d42f6566aa1cf4394c104f61\asset-pipeline-3.0.0.jar;C:\Users\AR Nic
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_111
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\PuTTY\;E:\nodejs\;E:\Git\cmd;C:\Users\AR Nicolae\AppData\Roaming\npm;E:\grails-3.0.0\bin;C:\Program Files\Java\jdk1.8.0_111\bin
+USERNAME=AR Nicolae
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 (6.3.9600.17415)
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 8296812k(2445808k free), swap 8296812k(5704k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.111-b14) for windows-amd64 JRE (1.8.0_111-b14), built on Sep 22 2016 19:24:05 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sun Nov 06 13:17:00 2016
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
