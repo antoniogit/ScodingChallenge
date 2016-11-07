@@ -9,7 +9,7 @@ class TransactionsController {
  		def paidfrom = Transactions.findAllByReceiveFrom(currentAccount);
    		def paidTo = Transactions.findAllBySendTo(currentAccount);
 	   
-
         [paiedTo: paidTo, paiedfrom: paidfrom]
     }
+
 }

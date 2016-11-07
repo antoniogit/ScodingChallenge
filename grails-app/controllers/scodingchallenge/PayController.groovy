@@ -3,8 +3,9 @@ package scodingchallenge
 class PayController {
 
     def index() { 
-    	def accounts = Account.list()
-    	[pay: Account.list()]
+    	
+    	def accountNames = Account.list()
+        [account:  accountNames.name]
    }
     def g_Inbox(){
 

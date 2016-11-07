@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="scodingchallenge.TransactionsSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-11-07T21:02:57" hostname="Antonio" time="0.685">
+  <properties/>
+  <testcase name="test something" classname="scodingchallenge.TransactionsSpec" time="0.685"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

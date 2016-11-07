@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="scodingchallenge.AccountControllerSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-11-07T21:02:54" hostname="Antonio" time="2.955">
+  <properties/>
+  <testcase name="test something" classname="scodingchallenge.AccountControllerSpec" time="2.955"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
